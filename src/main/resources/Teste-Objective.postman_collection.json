@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "ee5f4903-20b6-44a2-b716-0ba48a06b311",
+		"name": "Teste-Objective",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11226209"
+	},
+	"item": [
+		{
+			"name": "Salvar-Conta",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Recuperar-Conta",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Criar-Transacao",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"forma_pagamento\":\"D\", \"numero_conta\": 49, \"valor\":10}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/transacao",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"transacao"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
